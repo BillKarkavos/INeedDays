@@ -23,24 +23,35 @@ background-size: cover;
 .twitter {
 	position: fixed;
 	bottom: 20px;
-	left: 24px;
+	right: 20px;
 }
 
-.audio {
-	position: fixed;
-	bottom: 100px;
-	left: 100px;
-}
+
 	
-
-.credit {
-	position: absolute;
-	bottom: 24px;
-	right: 24px;
-	margin: 0;
-	z-index: 1;
-	font-size: 0.9em;
+	.audiojs {
+  background: -moz-linear-gradient(center top , #444 0%, #555 50%, #444 51%, #444 100%) repeat scroll 0 0 #404040;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+  font-family: monospace;
+  font-size: 12px;
+  height: 36px;
+  overflow: hidden;
+  width: 460px;
+  z-index: 100;
+  
+  position: fixed;
+	bottom: 20px;
+	left: 20px;
 }
+
+/* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+	.audiojs {		
+
+  height: 30px;
+  width: 37px;
+
+    }
+	}
 
 .credit a {
 	color: #fff;
@@ -50,6 +61,7 @@ background-size: cover;
 
 .layer {
 	text-align: center;
+	z-index:0;
 /*text-shadow: 0 1px 0 #ccc, 
                0 2px 0 #c9c9c9,
                0 3px 0 #bbb,
