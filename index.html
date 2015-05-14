@@ -1,204 +1,197 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
 
-		<meta charset="utf-8">
-
-		<title>Kontext: A context-shift transition inspired by iOS</title>
-
-		<meta name="description" content="A context-shift transition inspired by iOS. Created using JavaScript, CSS 3D transforms and CSS Animations.">
-		<meta name="author" content="Hakim El Hattab">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-<!--Favicon-->
-<link rel="shortcut icon" href="img/fav/favicon.ico" type="image/x-icon" />
-<link rel="apple-touch-icon" sizes="57x57" href="img/fav/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="img/fav/apple-touch-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="img/fav/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="img/fav/apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="img/fav/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="img/fav/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="img/fav/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="img/fav/apple-touch-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon-180x180.png">
-<link rel="icon" type="image/png" href="img/fav/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="img/fav/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="img/fav/favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="img/fav/android-chrome-192x192.png" sizes="192x192">
-<meta name="msapplication-square70x70logo" content="img/fav/smalltile.png" />
-<meta name="msapplication-square150x150logo" content="img/fav/mediumtile.png" />
-<meta name="msapplication-wide310x150logo" content="img/fav/widetile.png" />
-<meta name="msapplication-square310x310logo" content="img/fav/largetile.png" />
-
-
-
-
-
-		<link rel="stylesheet" href="css/kontext.css">
-		<link rel="stylesheet" href="css/demo.css">
+    <head>
+        <meta charset="utf-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
         
-        <link rel="stylesheet" href="css/normalize.css">
-      
+        <title>
+            Xreiazomai Meres | by Bill Karkavos
+        </title>
+        
+        <meta content="A fullscreen context-shift transition slideshow with audio and CSS blend modes" name="description">
+        <meta content="Bill Karkavos" name="author">
+        
+        <!--Favicon-->
+        <link href="img/fav/favicon.ico" rel="shortcut icon" type="image/x-icon">
+        <link href="img/fav/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+        <link href="img/fav/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
+        <link href="img/fav/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+        <link href="img/fav/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+        <link href="img/fav/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+        <link href="img/fav/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+        <link href="img/fav/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+        <link href="img/fav/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+        <link href="img/fav/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+        <link href="img/fav/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+        <link href="img/fav/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+        <link href="img/fav/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+        <link href="img/fav/android-chrome-192x192.png" rel="icon" sizes="192x192" type="image/png">
+        <meta content="img/fav/smalltile.png" name="msapplication-square70x70logo">
+        <meta content="img/fav/mediumtile.png" name="msapplication-square150x150logo">
+        <meta content="img/fav/widetile.png" name="msapplication-wide310x150logo">
+        <meta content="img/fav/largetile.png" name="msapplication-square310x310logo">
+        
+        <!--Kontext CSS-->
+        <link href="css/kontext.css" rel="stylesheet">
+        <!--Normalize CSS-->
+        <link href="css/normalize.css" rel="stylesheet">
+        <!--Custom CSS-->
+        <link href="css/style.css" rel="stylesheet">
+        
+        <!--Google Fonts-->
         <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
         <link href='http://fonts.googleapis.com/css?family=GFS+Didot&subset=greek' rel='stylesheet' type='text/css'>
-
-
-<script src="audiojs/audio.js"></script>
-
-<!--<script src="audiojs/audio.min.js"></script>-->
-
-<script>
-  audiojs.events.ready(function() {
-    var as = audiojs.createAll();
-  });
-</script>
-
-
-
-
-
-	</head>
-	<body>
-
-		<article class="kontext">
         
+        <!--Audio JS-->
+        <script src="audiojs/audio.js"></script><!--<script src="audiojs/audio.min.js"></script>-->
+
+        <script>
+        audiojs.events.ready(function() {
+        var as = audiojs.createAll();
+        });
+        </script>
         
-			<div class="layer one show">
-<!--				<p>A context-shift transition. Use the dots below or your keyboard arrows.</p>
--->                
+    </head>
+    
+    <body>
+    
+        <article class="kontext">
+            <div class="layer one show">
 
-<p> Χρειάζομαι μέρες που να εκτείνονται στις νύχτες σου <br>
-χίλια φίλια να με χορτασουνε μ' αιθάλη<br>
-άγριους άνεμους να γυρίσουνε τους δείκτες μου<br>
-και μια αγκαλιά να γείρω μέσα το κεφάλι </p>
-                
-                                  <div class="sbj12"></div>
+                <p class="cl-effect-18">
+                    <a data-hover="Χρειάζομαι μέρες που να εκτείνονται στις νύχτες σου &lt;br&gt; χίλια φίλια να με χορτάσουνε μ' αιθάλη&lt;br&gt; άγριους άνεμους να γυρίσουνε τους δείκτες μου&lt;br&gt; και μια αγκαλιά να γείρω μέσα το κεφάλι." href="#">Χρειάζομαι μέρες που να εκτείνονται στις νύχτες σου<br>
+                    χίλια φίλια να με χορτάσουνε μ' αιθάλη<br>
+                    άγριους άνεμους να γυρίσουνε τους δείκτες μου<br>
+                    και μια αγκαλιά να γείρω μέσα το κεφάλι.</a>
+                </p>
+            </div>
 
-			</div>
-            
-			<div class="layer two">
-                <p>Χρειάζομαι μάρτυρες να θρέψουν με το αίμα τους<br>
-την αγωνιά που χλωμιάζει την καρδιά μου<br>
-άθλιους εχθρούς να κατοικήσω μες στο βλέμμα τους<br>
-κι ένα κοχύλι για ν' ακούσω τ' όνομα μου, τ' όνομα μου </p>
+            <div class="layer two">
+                <p class="cl-effect-18">
+                    <a data-hover="Χρειάζομαι μάρτυρες να θρέψουν με το αίμα τους&lt;br&gt; την αγωνιά που χλωμιάζει την καρδιά μου&lt;br&gt; άθλιους εχθρούς να κατοικήσω μες στο βλέμμα τους&lt;br&gt; κι ένα κοχύλι για ν' ακούσω τ' όνομα μου, τ' όνομα μου." href="#">Χρειάζομαι μάρτυρες να θρέψουν με το αίμα τους<br>
+                    την αγωνιά που χλωμιάζει την καρδιά μου<br>
+                    άθλιους εχθρούς να κατοικήσω μες στο βλέμμα τους<br>
+                    κι ένα κοχύλι για ν' ακούσω τ' όνομα μου, τ' όνομα μου.</a>
+                </p>
+            </div>
 
-			</div>
+            <div class="layer three">
+                <p class="cl-effect-18">
+                    <a data-hover="Νεκρούς πλανήτες για ν' αστράψουν απ' τη λυσσά μου&lt;br&gt; θαμπό ασημί να θυμάμαι τη μάτια σου&lt;br&gt; ένα σφαγείο να προσφέρω την αλήθεια μου&lt;br&gt; και μια στεριά για να ξεβράσω τα όνειρα μου, τα όνειρα μου." href="#">Νεκρούς πλανήτες για ν' αστράψουν απ' τη λυσσά μου<br>
+                    θαμπό ασημί να θυμάμαι τη μάτια σου<br>
+                    ένα σφαγείο να προσφέρω την αλήθεια μου<br>
+                    και μια στεριά για να ξεβράσω τα όνειρα μου, τα όνειρα μου.</a>
+                </p>
+            </div>
 
-            
-			<div class="layer three">
-                
-                <p>Νεκρούς πλανήτες για ν' αστράψουν απ' τη λυσσά μου<br>
-θαμπό ασημί να θυμάμαι τη μάτια σου<br>
-ένα σφαγείο να προσφέρω την αλήθεια μου<br>
-και μια στεριά για να ξεβράσω τα όνειρα μου, τα όνειρα μου </p>
-
-			</div>
-		</article>
+            <div class="layer four">
+                <p>
+                    Διάφανα Κρίνα
+                </p>
+            </div>
+        </article>
         
-        <!--Audio-->
+        <!--Left Middle-->
+        <div class="left-middle">
+            Χρειάζομαι μέρες - Διάφανα Κρίνα
+        </div>
+        
+        <!--Audio via audio.js-->
         <!--Workaround by removing autoplay attribute on the actual element and instead using autoplay:true in the javascript.-->
-        <audio preload="auto" loop>
-      <source src="audio/xreiazomai-meres.mp3">
-          </audio>
-
-		<ul class="bullets"></ul>
+        <audio loop="" preload="auto">
+        <source src="audio/xreiazomai-meres.mp3">
+        </audio> 
         
-
-		  <div class="twitter">
-            <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/BillKarkavos">Follow @BillKarkavos</a> 
-			<script>
-				!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
-				if(!d.getElementById(id)){js=d.createElement(s);
-				js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
-				fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-            </script> 
-            <a class="twitter-share-button" data-text="Check out this site" data-via="BillKarkavos" href="https://twitter.com/share">Tweet</a> 
-			<script>
-				!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
-				if(!d.getElementById(id)){js=d.createElement(s);js.id=id;
-				js.src=p+'://platform.twitter.com/widgets.js';
-				fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+        <!--Bullets-->
+        <ul class="bullets">
+        </ul>
+        
+        <!--Twitter Buttons-->
+        <div class="twitter">
+            <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/BillKarkavos">Follow @BillKarkavos</a> <script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+                if(!d.getElementById(id)){js=d.createElement(s);
+                js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+                fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+            </script> <a class="twitter-share-button" data-text="Check out this site" data-via="BillKarkavos" href="https://twitter.com/share">Tweet</a> <script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+                if(!d.getElementById(id)){js=d.createElement(s);js.id=id;
+                js.src=p+'://platform.twitter.com/widgets.js';
+                fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
             </script>
         </div>
         
-                <div class="left-middle">Χρειάζομαι μέρες - Διάφανα Κρίνα</div>
-                
-       
-		<script src="js/kontext.js"></script>
-        
+        <!--Kontext JS-->
+        <script src="js/kontext.js"></script> 
+		
 		<script>
-			// Create a new instance of kontext
-			var k = kontext( document.querySelector( '.kontext' ) );
+		
+            // Create a new instance of kontext
+            var k = kontext( document.querySelector( '.kontext' ) );
 
 
-			// API METHODS:
+            // API METHODS:
 
-			// k.prev(); // Show prev layer
-			// k.next(); // Show next layer
-			// k.show( 3 ); // Show specific layer
-			// k.getIndex(); // Index of current layer
-			// k.getTotal(); // Total number of layers
-
-
-			// DEMO-SPECIFIC:
-
-			var bulletsContainer = document.body.querySelector( '.bullets' );
-
-			// Create one bullet per layer
-			for( var i = 0, len = k.getTotal(); i < len; i++ ) {
-				var bullet = document.createElement( 'li' );
-				bullet.className = i === 0 ? 'active' : '';
-				bullet.setAttribute( 'index', i );
-				bullet.onclick = function( event ) { k.show( event.target.getAttribute( 'index' ) ) };
-				bullet.ontouchstart = function( event ) { k.show( event.target.getAttribute( 'index' ) ) };
-				bulletsContainer.appendChild( bullet );
-			}
-
-			// Update the bullets when the layer changes
-			k.changed.add( function( layer, index ) {
-				var bullets = document.body.querySelectorAll( '.bullets li' );
-				for( var i = 0, len = bullets.length; i < len; i++ ) {
-					bullets[i].className = i === index ? 'active' : '';
-				}
-			} );
-
-			document.addEventListener( 'keyup', function( event ) {
-				if( event.keyCode === 37 ) k.prev();
-				if( event.keyCode === 39 ) k.next();
-			}, false );
-
-			var touchX = 0;
-			var touchConsumed = false;
-
-			document.addEventListener( 'touchstart', function( event ) {
-				touchConsumed = false;
-				lastX = event.touches[0].clientX;
-			}, false );
-
-			document.addEventListener( 'touchmove', function( event ) {
-				event.preventDefault();
-
-				if( !touchConsumed ) {
-					if( event.touches[0].clientX > lastX + 10 ) {
-						k.prev();
-						touchConsumed = true;
-					}
-					else if( event.touches[0].clientX < lastX - 10 ) {
-						k.next();
-						touchConsumed = true;
-					}
-				}
-			}, false );
-
-		</script>
+            // k.prev(); // Show prev layer
+            // k.next(); // Show next layer
+            // k.show( 3 ); // Show specific layer
+            // k.getIndex(); // Index of current layer
+            // k.getTotal(); // Total number of layers
 
 
+            // DEMO-SPECIFIC:
 
+            var bulletsContainer = document.body.querySelector( '.bullets' );
 
+            // Create one bullet per layer
+            for( var i = 0, len = k.getTotal(); i < len; i++ ) {
+                var bullet = document.createElement( 'li' );
+                bullet.className = i === 0 ? 'active' : '';
+                bullet.setAttribute( 'index', i );
+                bullet.onclick = function( event ) { k.show( event.target.getAttribute( 'index' ) ) };
+                bullet.ontouchstart = function( event ) { k.show( event.target.getAttribute( 'index' ) ) };
+                bulletsContainer.appendChild( bullet );
+            }
 
+            // Update the bullets when the layer changes
+            k.changed.add( function( layer, index ) {
+                var bullets = document.body.querySelectorAll( '.bullets li' );
+                for( var i = 0, len = bullets.length; i < len; i++ ) {
+                    bullets[i].className = i === index ? 'active' : '';
+                }
+            } );
 
+            document.addEventListener( 'keyup', function( event ) {
+                if( event.keyCode === 37 ) k.prev();
+                if( event.keyCode === 39 ) k.next();
+            }, false );
 
+            var touchX = 0;
+            var touchConsumed = false;
 
+            document.addEventListener( 'touchstart', function( event ) {
+                touchConsumed = false;
+                lastX = event.touches[0].clientX;
+            }, false );
 
-	</body>
+            document.addEventListener( 'touchmove', function( event ) {
+                event.preventDefault();
+
+                if( !touchConsumed ) {
+                    if( event.touches[0].clientX > lastX + 10 ) {
+                        k.prev();
+                        touchConsumed = true;
+                    }
+                    else if( event.touches[0].clientX < lastX - 10 ) {
+                        k.next();
+                        touchConsumed = true;
+                    }
+                }
+            }, false );
+
+        </script>
+        
+    </body>
 </html>
