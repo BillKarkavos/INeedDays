@@ -31,9 +31,9 @@
     // ### The main settings object
     // Where all the default settings are stored. Each of these variables and methods can be overwritten by the user-provided `options` object.
 	
-	//Workaround by removing autoplay attribute on the actual element and instead using autoplay:true in the javascript.
+	////Workaround by removing autoplay attribute on the actual element and instead using autoplay:true in the javascript.
     settings: {
-      autoplay: true,
+      autoplay: true, 
       loop: false,
       preload: true,
       imageLocation: path + 'player-graphics.gif',

@@ -18,64 +18,9 @@ body {
     color:#fff
 }
 
-.twitter {
-    position:fixed;
-    bottom:20px;
-    right:20px
-}
-
-.audiojs {
-    background:-moz-linear-gradient(center top,#444 0%,#555 50%,#444 51%,#444 100%) repeat scroll 0 0 #404040;
-    box-shadow:1px 1px 8px rgba(0,0,0,0.3);
-    font-family:monospace;
-    font-size:12px;
-    height:36px;
-    overflow:hidden;
-    width:460px;
-    z-index:100;
-    position:fixed;
-    bottom:20px;
-    left:20px
-}
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
-.audiojs {
-    height:30px;
-    width:37px
-}
-}
-
 .layer {
     text-align:center;
     z-index:0
-/*text-shadow: 0 1px 0 #ccc, 
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               0 5px 0 #aaa,
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15);*/
-}
-
-.layer h2 {
-    position:relative;
-    top:35%;
-    margin:0;
-    font-size:4em
-/*mix-blend-mode: difference;*/
-}
-
-.layer p {
-    position:relative;
-    top:40%;
-    margin:0;
-    font-size:2em
 }
 
 .layer.one {
@@ -102,11 +47,19 @@ body {
     background-size:cover
 }
 
-.layer.four {
-    background:url(../img/04.png) no-repeat scroll center center,url(../img/dk4.jpg) no-repeat scroll center center;
-/*background-color: white;*/
-    background-blend-mode:exclusion,luminosity;
-    background-size:cover
+.layer h2 {
+    position:relative;
+    top:35%;
+    margin:0;
+    font-size:4em
+/*mix-blend-mode: difference;*/
+}
+
+.layer p {
+    position:relative;
+    top:40%;
+    margin:0;
+    font-size:2em
 }
 
 .left-middle {
@@ -119,6 +72,28 @@ body {
     top:50%;
     transform:rotate(-90deg);
     width:500px
+}
+
+.note {
+	font-size:9px;
+	font-family:Arial, Helvetica, sans-serif;
+    position:fixed;
+    bottom:60px;
+    left:20px
+}
+
+.audiojs {
+    background:-moz-linear-gradient(center top,#444 0%,#555 50%,#444 51%,#444 100%) repeat scroll 0 0 #404040;
+    box-shadow:1px 1px 8px rgba(0,0,0,0.3);
+    font-family:monospace;
+    font-size:12px;
+    height:36px;
+    overflow:hidden;
+    width:460px;
+    z-index:100;
+    position:fixed;
+    bottom:20px;
+    left:20px
 }
 
 .bullets {
@@ -149,6 +124,12 @@ body {
 .bullets li.active {
     cursor:default;
     background:#fff
+}
+
+.twitter {
+    position:fixed;
+    bottom:20px;
+    right:20px
 }
 
 /* Effect 18: cross - for the "fake" text link effect*/
@@ -214,26 +195,31 @@ body {
     transform:rotate(-45deg)
 }
 
-@media screen and (max-width: 400px) {
-body {
-    font-size:12px
+
+
+@media only screen and (max-width: 768px) {
+.layer p {
+	top:30%;
+    font-size:16px;
+	margin:0px 20px;
+	
+}
+.left-middle {
+   display:none
 }
 
-.layer h2 {
-    font-size:5em
+.audiojs {
+    height:30px;
+    width:37px
 }
 
-.bullets li {
-    margin:0 6px
+.bullets {
+  display:none;
+}
 }
 
-.credit {
-    bottom:initial;
-    top:10px;
-    right:10px
-}
-
-.share,.github-ribbon {
-    display:none
+@media only screen and (max-width: 1024px) {
+.bullets {
+  display:none;
 }
 }
