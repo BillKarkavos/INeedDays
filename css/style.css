@@ -1,225 +1,248 @@
 html,body {
-    width:100%;
-    height:100%;
-    padding:0;
-    margin:0;
-    overflow:hidden
+  width:100%;
+  height:100%;
+  padding:0;
+  margin:0;
+  overflow:hidden
 }
 
 body {
-    background-color:#222;
-    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
-    background-repeat:repeat;
-    background-position:center center;
-    background-size:cover;
-/*	font-family: Raleway, sans-serif;
-*/
-    font-family:'GFS Didot',serif;
-    color:#fff
+  background-color:#222;
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
+  background-repeat:repeat;
+  background-position:center center;
+  background-size:cover;
+  font-family:'GFS Didot',Georgia,serif;
+  color:#fff
 }
 
 .layer {
-    text-align:center;
-    z-index:0
+  text-align:center;
+  z-index:0
 }
 
 .layer.one {
-    background:url(../img/01.png) no-repeat scroll center center,url(../img/dk1.jpg) no-repeat scroll center center;
-/*background-color: white;*/
-    background-blend-mode:difference,luminosity;
-    background-size:cover
-/*The second-image.png background will blend with the background color using the multiply mode, 
+  background:url(../img/01.png) no-repeat scroll center center,url(../img/dk1.jpg) no-repeat scroll center center;
+  background-color:#fff;
+  background-blend-mode:difference,light;
+  background-size:cover
+  /*The second-image.png background will blend with the background color using the multiply mode, 
   and then the first-image.png background will blend with the second image and the background color using the screen blend mode. 
   (Reminder: the first background image in the list is the one on top, and the ones following it are beneath it.)*/
 }
 
 .layer.two {
-    background:url(../img/02.png) no-repeat scroll center center,url(../img/dk2.jpg) no-repeat scroll center center;
-/*background-color: white;*/
-    background-blend-mode:exclusion,luminosity;
-    background-size:cover
+  background:url(../img/02.png) no-repeat scroll center center,url(../img/dk2.jpg) no-repeat scroll center center;
+  background-color:#fff;
+  background-blend-mode:difference,light;
+  background-size:cover
 }
 
 .layer.three {
-    background:url(../img/03.png) no-repeat scroll center center,url(../img/dk3.jpg) no-repeat scroll center center;
-/*background-color: white;*/
-    background-blend-mode:exclusion,luminosity;
-    background-size:cover
+  background:url(../img/03.png) no-repeat scroll center center,url(../img/dk3.jpg) no-repeat scroll center center;
+  background-color:#fff;
+  background-blend-mode:difference,light;
+  background-size:cover
+}
+
+.layer.four {
+  background:url(../img/04.png) no-repeat scroll center center,url(../img/dk4.jpg) no-repeat scroll center center;
+  background-color:#fff;
+  background-blend-mode:difference,light;
+  background-size:cover
 }
 
 .layer h2 {
-    position:relative;
-    top:35%;
-    margin:0;
-    font-size:4em
-/*mix-blend-mode: difference;*/
+  position:relative;
+  top:35%;
+  margin:0;
+  font-size:3em
+  /*mix-blend-mode: difference;*/
 }
 
 .layer p {
-    position:relative;
-    top:40%;
-    margin:0;
-    font-size:2em
+  position:relative;
+  top:40%;
+  margin:0;
+  font-size:2em
 }
 
 .left-middle {
-    font-size:10pt;
-    left:-15em;
-    margin:0 auto;
-    position:fixed;
-    text-align:center;
-    text-transform:none;
-    top:50%;
-    transform:rotate(-90deg);
-    width:500px
+  font-size:10pt;
+  left:-15em;
+  margin:0 auto;
+  position:fixed;
+  text-align:center;
+  text-transform:none;
+  top:50%;
+  transform:rotate(-90deg);
+  width:500px
 }
 
-.note {
-	font-size:9px;
-	font-family:Arial, Helvetica, sans-serif;
-    position:fixed;
-    bottom:60px;
-    left:20px
+.note-mob,.note-des {
+  font-size:9px;
+  font-family:Arial,Helvetica,sans-serif;
+  position:fixed;
+  bottom:60px;
+  left:20px
 }
 
 .audiojs {
-    background:-moz-linear-gradient(center top,#444 0%,#555 50%,#444 51%,#444 100%) repeat scroll 0 0 #404040;
-    box-shadow:1px 1px 8px rgba(0,0,0,0.3);
-    font-family:monospace;
-    font-size:12px;
-    height:36px;
-    overflow:hidden;
-    width:460px;
-    z-index:100;
-    position:fixed;
-    bottom:20px;
-    left:20px
+  background:-moz-linear-gradient(center top,#444 0%,#555 50%,#444 51%,#444 100%) repeat scroll 0 0 #404040;
+  box-shadow:1px 1px 8px rgba(0,0,0,0.3);
+  font-family:monospace;
+  font-size:12px;
+  height:36px;
+  overflow:hidden;
+  width:460px;
+  z-index:100;
+  position:fixed;
+  bottom:20px;
+  left:20px
 }
 
 .bullets {
-    position:absolute;
-    width:100%;
-    bottom:20px;
-    padding:0;
-    margin:0;
-    text-align:center
+  position:absolute;
+  width:100%;
+  bottom:20px;
+  padding:0;
+  margin:0;
+  text-align:center
 }
 
 .bullets li {
-    display:inline-block;
-    width:20px;
-    height:20px;
-    border-radius:50%;
-    margin:0 3px;
-    background:rgba(255,255,255,0.5);
-    box-shadow:0 0 4px rgba(0,0,0,0.2);
-    cursor:pointer;
-    -webkit-tap-highlight-color:rgba(0,0,0,0)
+  display:inline-block;
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  margin:0 3px;
+  background:rgba(255,255,255,0.5);
+  box-shadow:0 0 4px rgba(0,0,0,0.2);
+  cursor:pointer;
+  -webkit-tap-highlight-color:rgba(0,0,0,0)
 }
 
 .bullets li:hover {
-    background:rgba(255,255,255,0.8)
+  background:rgba(255,255,255,0.8)
 }
 
 .bullets li.active {
-    cursor:default;
-    background:#fff
+  cursor:default;
+  background:#fff
 }
 
 .twitter {
-    position:fixed;
-    bottom:20px;
-    right:20px
+  position:fixed;
+  bottom:20px;
+  right:20px
 }
 
 /* Effect 18: cross - for the "fake" text link effect*/
 .cl-effect-18 {
-    position:relative;
-    z-index:1
+  position:relative;
+  z-index:1
 }
 
 .cl-effect-18 a {
-    padding:0;
-    color:#fff;
-    font-weight:400;
-    text-decoration:none;
-    -webkit-transition:color .3s;
-    -moz-transition:color .3s;
-    transition:color .3s
+  padding:0;
+  color:#fff;
+  font-weight:400;
+  text-decoration:none;
+  -webkit-transition:color .3s;
+  -moz-transition:color .3s;
+  transition:color .3s
 }
 
 .cl-effect-18 a::before,.cl-effect-18 a::after {
-    position:absolute;
-    width:50%;
-    left:25%;
-    top:50%;
-    height:1px;
-    background:#fff;
-    content:'';
-    z-index:-1;
-    -webkit-transition:-webkit-transform 0.3s,opacity .3s;
-    -moz-transition:-moz-transform 0.3s,opacity .3s;
-    transition:transform 0.3s,opacity .3s;
-    pointer-events:none
+  position:absolute;
+  width:50%;
+  left:25%;
+  top:50%;
+  height:1px;
+  background:#fff;
+  content:'';
+  z-index:-1;
+  -webkit-transition:-webkit-transform 0.3s,opacity .3s;
+  -moz-transition:-moz-transform 0.3s,opacity .3s;
+  transition:transform 0.3s,opacity .3s;
+  pointer-events:none
 }
 
 .cl-effect-18 a::before {
-    -webkit-transform:translateY(-120px);
-    -moz-transform:translateY(-120px);
-    transform:translateY(-120px)
+  -webkit-transform:translateY(-120px);
+  -moz-transform:translateY(-120px);
+  transform:translateY(-120px)
 }
 
 .cl-effect-18 a::after {
-    -webkit-transform:translateY(120px);
-    -moz-transform:translateY(120px);
-    transform:translateY(120px)
+  -webkit-transform:translateY(120px);
+  -moz-transform:translateY(120px);
+  transform:translateY(120px)
 }
 
 .cl-effect-18 a:hover,.cl-effect-18 a:focus {
-    color:#fff
+  color:#fff
 }
 
 .cl-effect-18 a:hover::before,.cl-effect-18 a:hover::after,.cl-effect-18 a:focus::before,.cl-effect-18 a:focus::after {
-    opacity:.2
+  opacity:.2
 }
 
 .cl-effect-18 a:hover::before,.cl-effect-18 a:focus::before {
-    -webkit-transform:rotate(45deg);
-    -moz-transform:rotate(45deg);
-    transform:rotate(45deg)
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  transform:rotate(45deg)
 }
 
 .cl-effect-18 a:hover::after,.cl-effect-18 a:focus::after {
-    -webkit-transform:rotate(-45deg);
-    -moz-transform:rotate(-45deg);
-    transform:rotate(-45deg)
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  transform:rotate(-45deg)
 }
-
-
 
 @media only screen and (max-width: 768px) {
-.layer p {
-	top:30%;
-    font-size:16px;
-	margin:0px 20px;
-	
+.layer h2 {
+  top:25%;
+  font-size:2em
+  /*mix-blend-mode: difference;*/
 }
+
+.layer p {
+  top:30%;
+  font-size:1.2em;
+  margin:0 20px
+}
+
 .left-middle {
-   display:none
+  display:none
 }
 
 .audiojs {
-    height:30px;
-    width:37px
+  height:30px;
+  width:37px
 }
 
 .bullets {
-  display:none;
+  display:none
+}
+
+.cl-effect-18 a::before,.cl-effect-18 a::after {
+  display:none
 }
 }
 
 @media only screen and (max-width: 1024px) {
 .bullets {
-  display:none;
+  display:none
+}
+
+.note-des {
+  display:none
+}
+}
+
+@media only screen and (min-width: 1025px) {
+.note-mob {
+  display:none
 }
 }
